@@ -13,7 +13,9 @@ int main(void)
 
 	printf("%d, %d, ", a, b);
 
-	for (int i = 3; i <= 98; i++)
+	int i;
+
+	for (i = 3; i <= 98; i++)
 	{
 		c = a + b;
 		printf("%d", c);

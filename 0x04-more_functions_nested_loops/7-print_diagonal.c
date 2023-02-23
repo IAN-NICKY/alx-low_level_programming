@@ -1,18 +1,23 @@
 #include "main.h"
 
 /**
- * print_diagonal - draws a straight line and end in newline
- * @n: number of times the character '\n' should be printed
- * Return: diagonal if n > 0 else '\n'
+ * print_diagonal - prints diagonal line n times.
+ * @n: times diagonal line is printed.
+ * Return: no return.
  */
-
 void print_diagonal(int n)
 {
-	int diagonal;
+	int i, j;
 
-	for (diagonal = 0; diagonal < n; diagonal++)
+	for (i = 0; i < n; i++)
 	{
-		_putchar('\');
+		for (j = 0; j < i; j++)
+		{
+			_putchar(' ');
+		}
+		_putchar(92);
+		if (i < (n - 1))
+			_putchar('\n');
 	}
 	_putchar('\n');
 }

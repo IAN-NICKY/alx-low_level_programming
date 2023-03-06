@@ -8,14 +8,9 @@
  */
 int main(void)
 {
-    char *s = "hello";
-    char *f;
+    int n;
 
-    f = _strchr(s, 'l');
-
-    if (f != NULL)
-    {
-        printf("%s\n", f);
-    }
+    n = add(89, 9);
+    printf("%d\n", n);
     return (0);
 }
